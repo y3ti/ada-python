@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - main
+      - linux/aarch64-local
     paths-ignore:
       - '**.rst'
       - 'docs/**'
@@ -24,7 +25,7 @@ jobs:
   build_wheels:
     strategy:
       matrix:
-        os: ["ubuntu-latest", "macos-latest"]
+        os: ["macos-latest"]
 
     runs-on: ${{ matrix.os }}
     steps:
