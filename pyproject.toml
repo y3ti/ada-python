@@ -27,7 +27,7 @@ build = [
 ]
 
 [tool.cibuildwheel.linux]
-archs = ["x86_64"]
+archs = ["x86_64", "aarch64"]
 
 [tool.cibuildwheel.macos]
 archs = ["x86_64", "universal2", "arm64"]
