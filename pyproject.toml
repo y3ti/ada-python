@@ -25,6 +25,7 @@ build = [
     "pp38-*",
     "pp39-*",
 ]
+before-all = "make c_lib"
 
 [tool.cibuildwheel.linux]
 archs = ["x86_64", "aarch64"]
